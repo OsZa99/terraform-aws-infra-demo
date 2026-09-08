@@ -7,3 +7,13 @@ output "subnet_id" {
   description = "ID of Subnet"
   value       = aws_subnet.my_subnet.id
 }
+
+output "internet_gateway_id" {
+  description = "ID of Internet Gateway"
+  value       = aws_internet_gateway.my_igw.id
+}
+
+output "route_table_id" {
+  description = "ID of Route Table"
+  value       = aws_route_table.my_rt.id
+}

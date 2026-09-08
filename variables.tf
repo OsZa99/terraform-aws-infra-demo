@@ -22,3 +22,13 @@ variable "subnet_name" {
   description = "Name of the subnet"
   type        = string
 }
+
+variable "igw_name" {
+  description = "Name of the Internet Gateway"
+  type        = string
+}
+
+variable "rt_name" {
+  description = "Name of the Route Table"
+  type        = string
+}
