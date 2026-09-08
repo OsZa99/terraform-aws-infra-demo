@@ -32,3 +32,13 @@ variable "rt_name" {
   description = "Name of the Route Table"
   type        = string
 }
+
+variable "sg_name" {
+  description = "Name of the Security Group"
+  type        = string
+}
+
+variable "my_ip" {
+  description = "My public IP address for SSH access"
+  type        = string
+}
