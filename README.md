@@ -4,3 +4,4 @@
 - Create internet gateway & configure route table association
 - Create security group allowing SSH from my IP only
 - Create a public EC2 instance
+- Script de configuration

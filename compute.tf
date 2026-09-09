@@ -33,6 +33,9 @@ resource "aws_instance" "my_instance" {
 
   associate_public_ip_address = true
   key_name = aws_key_pair.ssh_key.key_name
+  
+  user_data                   = file("script.sh")
+  user_data_replace_on_change = true
 
   tags = {
     Name = var.instance_name

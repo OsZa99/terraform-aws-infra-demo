@@ -32,3 +32,8 @@ output "instance_public_ip" {
   description = "Public IP of EC2 Instance"
   value       = aws_instance.my_instance.public_ip
 }
+
+output "website_url" {
+  description = "L'URL pour acceder au site web"
+  value       = "http://${aws_instance.my_instance.public_ip}"
+}
