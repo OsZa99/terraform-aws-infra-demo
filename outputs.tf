@@ -37,3 +37,8 @@ output "website_url" {
   description = "L'URL pour acceder au site web"
   value       = "http://${aws_instance.my_instance.public_ip}"
 }
+
+output "s3_bucket_name" {
+  description = "Name of bucket S3"
+  value       = aws_s3_bucket.terraform_state.bucket
+}
