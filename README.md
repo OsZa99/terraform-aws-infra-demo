@@ -6,3 +6,4 @@
 - Create a public EC2 instance
 - Script de configuration
 - Create a S3 bucket
+- Create a S3 backend + state locking and The S3 bucket was manually deleted to avoid Terraform recreating it on the next apply. This file is no longer needed in the project.
